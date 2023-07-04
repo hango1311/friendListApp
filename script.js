@@ -10,9 +10,9 @@ const app = Vue.createApp({
   <input ref="Fage" type="number" placeholder="add friend age"/>
   </div>
   <div>Gender:</div>
-    <input type="radio" value="Female" v-model="select"/>
+    <input type="radio" value="Female" v-model="gender"/>
     <label>Female</label>
-    <input type="radio" value="Male" v-model="select"/>  
+    <input type="radio" value="Male" v-model="gender"/>  
     <label>Male</label>
   <div><button @click="confirm">add new friend</button></div>
 </div>
@@ -25,7 +25,7 @@ const app = Vue.createApp({
         friendsName:``,
         tuoi:``,
         sex:``,
-        gender:["female","male","other"],
+        gender:``,
 
       friends: [
         {
